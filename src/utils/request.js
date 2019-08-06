@@ -1,7 +1,7 @@
 import qs from 'qs';
 import axios from 'axios';
 import { checkHttpStatus, checkBackendCode } from './request-tips';
-import { Message } from 'iview';
+import { Message} from 'element-ui'
 import { getQueryString } from './tools';
 
 // 创建实例
@@ -17,10 +17,11 @@ instance.defaults.baseURL = process.env.VUE_APP_API_BASEURL
 instance.defaults.timeout = 20000;
 instance.defaults.headers['Access-Control-Allow-Origin'] = '*';
 instance.defaults.headers['X-Requested-With'] = 'XMLHttpRequest';
-instance.defaults.headers['Content-Type'] = 'application/json; charset=UTF-8';
+instance.defaults.headers.post['Content-Type'] = 'application/json; charset=UTF-8';
 instance.defaults.responseType = 'json';
-// instance.defaults.transformRequest = [data => {return JSON.stringify(data)}];
+
 // 数据序列化
+instance.defaults.transformRequest = [data => {return JSON.stringify(data)}];
 
 const ignoreUrlList = ['/api/label/is-unique/label-code/'];
 
@@ -50,24 +51,22 @@ instance.interceptors.request.use(
     config.cancelToken = new CancelToken(res => {
       pending.push({ UrlPath: config.url, Cancel: res });
     });
+
     // 统一设置 token
-    if (window.localStorage.getItem('backtoken')) {
-      config.headers['token'] = window.localStorage.getItem('backtoken')
-    }
+    config.headers['auth-token'] = getQueryString('token') || '';
     // 合并自定义的 header
     config.headers = Object.assign({}, config.headers, config.customHeaders);
+
     // 单独设置 baseURL
     if (config.customHeaders && config.customHeaders.baseUrl) {
       config.baseURL = config.customHeaders.baseUrl;
     }
-    if (config.url === 'sys/login' || config.url === 'getVfcode' || config.url === 'productlabel/insert' || config.url === 'productlabel/delete') {
-    } else {
-      config.headers['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
-    }
+
     // 单独设置 responseType
     if (config.customHeaders.responseType) {
       config.responseType = config.customHeaders.responseType;
     }
+
     // 单独设置 timeout
     if (config.customHeaders && config.customHeaders.timeout) {
       config.timeout = config.customHeaders.timeout;
@@ -91,7 +90,7 @@ export default {
     return instance({
       method: 'get',
       url,
-      params,
+      params, // get 请求时带的参数 叫 'params'
       customHeaders: {...options },
     })
       .then(response => checkHttpStatus(response))
@@ -111,7 +110,7 @@ export default {
     return instance({
       method: 'post',
       url,
-      data:url === 'sys/login'?data:(url === 'getVfcode'?data:(url === 'productlabel/insert'?data:(url === 'productlabel/delete'?data:qs.stringify(data)))), // post 请求时带的参数 叫 'data'
+      data, // post 请求时带的参数 叫 'data'
       customHeaders: {...options },
     })
       .then(response => checkHttpStatus(response))
@@ -122,7 +121,7 @@ export default {
           return Promise.reject(err);
         } else {
           Message.destroy();
-          Message.error(err.msg);
+          Message.error(err.message);
           return Promise.reject(err);
         }
       });

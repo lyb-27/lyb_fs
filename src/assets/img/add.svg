@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>添加按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="添加按钮" fill="#4D83FF">
+            <g id="Rectangle-9">
+                <rect x="0" y="5.14285714" width="12" height="1.71428571" rx="0.857142857"></rect>
+                <rect transform="translate(6.000000, 6.000000) rotate(90.000000) translate(-6.000000, -6.000000) " x="0" y="5.14285714" width="12" height="1.71428571" rx="0.857142857"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

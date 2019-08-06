@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>关闭按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关闭按钮" fill="#666666">
+            <g>
+                <rect id="Rectangle-14" transform="translate(6.929646, 6.929646) rotate(-45.000000) translate(-6.929646, -6.929646) " x="-1.93702021" y="5.99631312" width="17.7333333" height="1.86666667" rx="0.933333333"></rect>
+                <rect id="Rectangle-14-Copy" transform="translate(6.929646, 6.929646) rotate(45.000000) translate(-6.929646, -6.929646) " x="-1.93702021" y="5.99631312" width="17.7333333" height="1.86666667" rx="0.933333333"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

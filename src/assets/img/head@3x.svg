@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>头像</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="23" cy="23" r="23"></circle>
+    </defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="头像">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#ECECEC" xlink:href="#path-1"></use>
+                <path d="M14,22.5001066 C14,17.2614456 18.2612037,13 23.5,13 C28.7386258,13 33,17.2614456 33,22.5001066 C33,27.739066 28.7386258,32 23.5,32 C18.2612037,32 14,27.739066 14,22.5001066 Z M6,45.9788278 C6.19980815,43.8124257 7.27723935,36.1364397 15.5583438,32.02541 C17.6121567,33.5816508 20.1925018,34.518644 23.0000208,34.518644 C25.8229514,34.518644 28.4171252,33.5720819 30.4765195,32 C38.7934037,36.0937413 39.7974428,43.7160125 40,45.978667 C39.9507248,46.0247025 6.04915022,45.9824463 6,45.9788278 Z" id="icontouxiang" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

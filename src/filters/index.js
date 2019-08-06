@@ -33,29 +33,22 @@ export const toThousandFilter = num => {
   return (+num || 0).toString().replace(/^-?\d+/g, m => m.replace(/(?=(?!\b)(\d{3})+$)/g, ','));
 };
 
-// 多渠道的翻译
-export const translateAppId = (appId, appIds) => {
-  if (appId) {
-    for (let i = 0; i < appIds.length; i++) {
-      appId = appId.replace(appIds[i].appId, appIds[i].name || appIds[i].appName)
+// 扁平数组转树状
+export const formattingJson = list => {
+  let temp = {};
+  let tree = {};
+  for(let i in list){
+    temp[list[i].id] = list[i];
+  }
+  for(let i in temp){
+    if(temp[i].parentId) {
+      if(!temp[temp[i].parentId].children) {
+        temp[temp[i].parentId].children = new Array();
+      }
+      temp[temp[i].parentId].children.push(temp[i]);
+    } else {
+      tree[temp[i].id] =  temp[i];
     }
   }
-  return appId
+  return tree;
 }
-// export const  money = (number) => {
-//   number = number || 0
-//   let negative = number < 0 ? '-' : '',
-//     i = parseInt((number = Math.abs(+number || 0).toFixed(2)), 10) + '',
-//     j = (j = i.length) > 3 ? j % 3 : 0
-//   return (
-//     negative +
-//     (j ? i.substr(0, j) + ',' : '') +
-//     i.substr(j).replace(/(\d{3})(?=\d)/g, '$1' + ',') +
-//     (Math.abs(number - i) > 0
-//       ? '.' +
-//       Math.abs(number - i)
-//         .toFixed(2)
-//         .slice(2)
-//       : '')
-//   )
-// }

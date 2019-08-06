@@ -131,7 +131,7 @@ module.exports = {
           require('autoprefixer')({
             browsers: ['ie>=8', '>1% in CN', 'iOS >= 8', 'Android >= 4'],
           }),
-          require('postcss-plugin-px2rem')({ rootValue: 100 }),
+          // require('postcss-plugin-px2rem')({ rootValue: 100 }),
         ]
       }
     }
@@ -144,7 +144,7 @@ module.exports = {
     hotOnly: false,
     proxy: {
       '/api': {
-        target: 'https://192.168.3.69/', //测试
+        target: 'https://agency.lanniao.com/agencyApi/', //测试
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'

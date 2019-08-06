@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>删除按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="删除按钮">
+            <g>
+                <circle id="Oval" fill="#4C8AFF" cx="7" cy="7" r="7"></circle>
+                <g id="Group-24" transform="translate(2.333333, 2.333333)" fill="#FFFFFF">
+                    <rect id="Rectangle-17" transform="translate(4.666667, 4.666667) rotate(45.000000) translate(-4.666667, -4.666667) " x="0" y="4" width="9.33333333" height="1.33333333" rx="0.666666667"></rect>
+                    <rect id="Rectangle-17-Copy" transform="translate(4.666667, 4.666667) rotate(135.000000) translate(-4.666667, -4.666667) " x="0" y="4" width="9.33333333" height="1.33333333" rx="0.666666667"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

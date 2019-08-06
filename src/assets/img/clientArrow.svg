@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>客户名称箭头</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="客户名称箭头" fill="#666666">
+            <path d="M6.54880847,0.341509094 L11.3450402,5.82291683 C11.7087223,6.23855347 11.6666048,6.87031608 11.2509682,7.23399814 C11.0686767,7.3935032 10.8346867,7.48142144 10.5924635,7.48142144 L1,7.48142144 C0.44771525,7.48142144 1.33226763e-14,7.03370619 1.33226763e-14,6.48142144 C1.33226763e-14,6.2391983 0.0879182475,6.00520833 0.247423305,5.82291683 L5.04365508,0.341509094 C5.40733713,-0.0741275376 6.03909975,-0.116245046 6.45473638,0.247437007 C6.48814715,0.276671432 6.51957404,0.308098323 6.54880847,0.341509094 Z" transform="translate(5.796239, 3.740711) scale(1, -1) translate(-5.796239, -3.740711) "></path>
+        </g>
+    </g>
+</svg>

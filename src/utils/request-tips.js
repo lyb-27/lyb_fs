@@ -53,7 +53,6 @@ function checkHttpStatus(response) {
     return response;
   }
   if (response && response.status === 401) {
-    console.log('登录过期了', 'response');
     // store.dispatch('common/parentLogin');
   }
   if (response && response.data) {
@@ -63,9 +62,8 @@ function checkHttpStatus(response) {
 }
 
 function checkBackendCode(res) {
-  console.log(res)
   // 如果 后端返回的码正常 则 将 res.data 返回
-  if (res && res.data) {
+  if (res.status == 200) {
     // if (res.data.code === 0) {
       return res.data;
     // } else {
@@ -73,7 +71,6 @@ function checkBackendCode(res) {
     //   return res.data;
     // }
   }
-  console.log('取消上次请求了！');
 }
 
 export { checkHttpStatus, checkBackendCode };

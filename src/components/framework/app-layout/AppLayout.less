@@ -1,52 +1,12 @@
-
-.app-layout {
+.bodyWrap{
   height: 100%;
+  background-color: rgba(244, 248, 252, 1);
   display: flex;
-}
-
-.app-layout-left {
-  float: left;
-  width: @widthMenu;
-  height: 100%;
-  overflow: hidden;
-  transition: width .3s ease;
-  background-color: @layout-sider-background;
-}
-.app-layout-left.collapsed {
-  width: @widthMenuCollapsed;
-}
-
-.app-layout-left-inside {
-  overflow-y: scroll;
-  margin-right: -18px;
-  height: 100%;
-  padding-top: .1px;
-  margin-top: -.1px;
-}
-
-.app-layout-right {
-  flex: 1;
-  width: 70%;
-  height: 100%;
-}
-.app-layout-right.collapsed {
-  //margin-left: @widthMenuCollapsed;
-}
-
-.app-layout-main-wrap {
-  height: calc(100% - 60px);
-  overflow: hidden;
-}
-
-.app-layout-right-content-main {
-  padding:10px 10px 50px 10px;
-  // height: calc(100% - 40px);
-  height: 100%;
-  background-color: #f5f7f9;
-  overflow: auto;
-}
-.app-layout-right-title {
-  display: flex;
-  align-items: center;
-  border-bottom: 1PX solid #e8eaec;
+  width: 100%;
+  flex-flow:row;
+  .contentArea{
+      flex:1;
+      height:100%;
+      overflow:hidden;
+  }
 }

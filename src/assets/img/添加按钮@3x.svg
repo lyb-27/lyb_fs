@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>添加按钮</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="__wesketch_export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="添加按钮">
+            <g>
+                <circle id="Oval-3" stroke="#4D83FF" stroke-width="0.75" fill="#FFFFFF" stroke-dasharray="2.25,2.25" cx="9" cy="9" r="9"></circle>
+                <rect id="Rectangle-9" fill="#4D83FF" x="4.5" y="8.25" width="9" height="1.5" rx="0.75"></rect>
+                <rect id="Rectangle-9" fill="#4D83FF" transform="translate(9.000000, 9.000000) rotate(90.000000) translate(-9.000000, -9.000000) " x="4.5" y="8.25" width="9" height="1.5" rx="0.75"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
